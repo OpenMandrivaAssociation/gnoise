@@ -60,7 +60,7 @@ Exec=%{name}
 Icon=%{name}
 Terminal=false
 Type=Application
-Categories=X-MandrivaLinux-Internet-WebBrowsers
+Categories=X-MandrivaLinux-Internet-WebBrowsers;
 EOF
 
 rm -rf %{buildroot}%_datadir/gnome/apps/Multimedia/gnoise.desktop
