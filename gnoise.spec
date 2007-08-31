@@ -40,7 +40,7 @@ rm -rf $RPM_BUILD_ROOT
 
 desktop-file-install --vendor='' --delete-original \
 	--dir=%{buildroot}%{_datadir}/applications \
-	--add-category='AudioVideo;Audio;AudioVideoEditing' \
+	--add-category='AudioVideo;Audio;AudioVideoEditing;GTK' \
 	%{buildroot}%_datadir/gnome/apps/Multimedia/gnoise.desktop
 
 %post
