@@ -9,6 +9,7 @@ Release: 	%{release}
 License: 	GPL
 Group: 		Sound
 Source: 	%{name}-%{version}.tar.bz2
+Patch0:		gnoise-0.1.15-fix-desktop.patch
 URL: 		http://sourceforge.net/projects/gnoise/
 BuildRoot: 	%{_tmppath}/%{name}-buildroot
 BuildRequires:	libgtk+-devel
@@ -21,7 +22,8 @@ files. A peaks display cache provides a fast, double-buffered display.
 
 %prep
 
-%setup -q 
+%setup -q
+%patch0 -p0
 
 %build
 export FORCE_AUTOCONF_2_5=1
@@ -40,7 +42,6 @@ rm -rf $RPM_BUILD_ROOT
 
 desktop-file-install --vendor='' --delete-original \
 	--dir=%{buildroot}%{_datadir}/applications \
-	--add-category='AudioVideo;Audio;AudioVideoEditing;GTK' \
 	%{buildroot}%_datadir/gnome/apps/Multimedia/gnoise.desktop
 
 %post
