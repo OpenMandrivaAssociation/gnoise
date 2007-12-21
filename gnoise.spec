@@ -11,6 +11,7 @@ Group: 		Sound
 Source: 	%{name}-%{version}.tar.bz2
 Patch0:		gnoise-0.1.15-fix-desktop.patch
 URL: 		http://sourceforge.net/projects/gnoise/
+BuildRoot: 	%{_tmppath}/%{name}-buildroot
 BuildRequires:	libgtk+-devel
 BuildRequires:	automake
 BuildRequires:	desktop-file-utils
