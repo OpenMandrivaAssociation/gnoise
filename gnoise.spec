@@ -44,11 +44,15 @@ desktop-file-install --vendor='' --delete-original \
 	--dir=%{buildroot}%{_datadir}/applications \
 	%{buildroot}%_datadir/gnome/apps/Multimedia/gnoise.desktop
 
+%if %mdkversion < 200900
 %post
 %update_menus
+%endif
  
+%if %mdkversion < 200900
 %postun
 %clean_menus 
+%endif
 
 %clean
 rm -rf $RPM_BUILD_ROOT
