@@ -1,6 +1,6 @@
 %define name gnoise
 %define version 0.1.15
-%define release %mkrel 11
+%define release %mkrel 12
 
 Version: 	%{version}
 Summary: 	GTK-based wave file editor
