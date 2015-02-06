@@ -1,7 +1,7 @@
 Summary:	GTK-based wave file editor
 Version:	0.1.15
 Name:		gnoise
-Release:	13
+Release:	14
 License:	GPLv2+
 Group:		Sound
 Url:		http://sourceforge.net/projects/gnoise/
