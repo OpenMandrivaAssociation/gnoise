@@ -4,7 +4,7 @@ Name:		gnoise
 Release:	14
 License:	GPLv2+
 Group:		Sound
-Url:		http://sourceforge.net/projects/gnoise/
+Url:		https://sourceforge.net/projects/gnoise/
 Source0:	%{name}-%{version}.tar.bz2
 Patch0:		gnoise-0.1.15-fix-desktop.patch
 BuildRequires:	pkgconfig(gtk+)
